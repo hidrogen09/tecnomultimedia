@@ -1,6 +1,6 @@
 class Tablero {
-  int cantidadCeldasW = 25;
-  int cantidadCeldasH = 25;
+  int cantidadCeldasW = 40;
+  int cantidadCeldasH = 40;
   Celda [][] celdas = new Celda [cantidadCeldasW][cantidadCeldasH];
 
 
