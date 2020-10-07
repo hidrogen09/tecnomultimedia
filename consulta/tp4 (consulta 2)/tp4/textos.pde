@@ -75,10 +75,10 @@ void inicializarTextos() {
 void imprimirTextosPorPantalla () { //FOR para iniciar textos
   textSize(20);
   fill(255);
-  for (int i=1; i<cantText; i++) { 
-    text(texto[miPantalla][textoActual], posTextos[miPantalla][textoActual][0], posTextos[miPantalla][textoActual][1]);
+  for (int i=1; i<=cantText; i++) { 
+   text (texto[cantPantallas][i*cantText], posTextos[pantalla][cantText][0], posTextos[cantPantallas][cantText][1]);
   }
-}
+}  
 
 
 
