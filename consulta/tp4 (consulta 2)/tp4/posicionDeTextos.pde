@@ -1,14 +1,14 @@
 void inicializarPosicionesDeTextos() {
 
 
-  posTextos[1][1][0] = PorcentajeX(height/2);      // Pantalla 1, Texto 1, PosX
-  posTextos[1][1][1] = PorcentajeY(140);          // Pantalla 1, Texto 1, PosY
-  posTextos[1][2][0] = PorcentajeX(height/2);    // Pantalla 1, Texto 2, PosX
-  posTextos[1][2][1] = PorcentajeY(170);        // Pantalla 1, Texto 2, PosY
-  posTextos[1][3][0] = PorcentajeX(600);       // Pantalla 1, Texto 3, PosY
-  posTextos[1][3][1] = PorcentajeY(550);      // Pantalla 1, Texto 3, PosY
-  posTextos[1][4][0] = PorcentajeX(60);      // Pantalla 1, Texto 3, PosY
-  posTextos[1][4][1] = PorcentajeY(550);    // Pantalla 1, Texto 3, PosY
+  posTextos[1][1][0] = PorcentajeX(height/2); // Pantalla 1, Texto 1, PosX
+  posTextos[1][1][1] = PorcentajeY(140);          
+  posTextos[1][2][0] = PorcentajeX(height/2);    
+  posTextos[1][2][1] = PorcentajeY(170);        
+  posTextos[1][3][0] = PorcentajeX(600);       
+  posTextos[1][3][1] = PorcentajeY(550);      
+  posTextos[1][4][0] = PorcentajeX(60);      
+  posTextos[1][4][1] = PorcentajeY(550);    
 
   posTextos[2][5][0] = PorcentajeX(height/2-20); //pantalla 2
   posTextos[2][5][1] = PorcentajeY(movtext);
