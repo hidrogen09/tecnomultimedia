@@ -1,6 +1,4 @@
-int miPantalla;
 int pantalla = 1;
-int textoActual = 1;
 
 int cantPantallas = 21;
 int cantImagenes = 21;
@@ -36,5 +34,4 @@ void setup() {
   imagenes();
   inicializarTextos();
   arregloClick();
-  miPantalla = pantalla;
 }
