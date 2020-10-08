@@ -13,6 +13,6 @@ void draw () {
 
   //iniciar textos
 
-  imprimirTextosPorPantalla();
+  imprimirTextosPorPantalla(pantalla, color(255), 25);
   inicializarPosicionesDeTextos();
 }
