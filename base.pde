@@ -14,4 +14,6 @@ void draw () {
   //iniciar textos
   imprimirTextosPorPantalla();
   inicializarPosicionesDeTextos();
+  
+  //  imprimirTextosPorPantalla(1, 255, 20); PARA CICLO FOR
 }
