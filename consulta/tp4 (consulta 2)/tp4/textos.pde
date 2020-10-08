@@ -72,11 +72,12 @@ void inicializarTextos() {
   texto[20][33] = "Barba Azul se queda sin opcion y mata a la\ndoncella antes de que pueda hacer algo.";
 }
 
-void imprimirTextosPorPantalla () { //FOR para iniciar textos
-  textSize(20);
-  fill(255);
-  for (int i=1; i<=cantText; i++) { 
-   text (texto[cantPantallas][i*cantText], posTextos[pantalla][cantText][0], posTextos[cantPantallas][cantText][1]);
+void imprimirTextosPorPantalla (int pantalla, color pColor, int tam) { //FOR para iniciar textos
+  pantalla = 1;
+  fill(pColor);
+  textSize(tam);
+  for (int i=0; i<=cantText; i++) { 
+   text(texto[pantalla][cantText], posTextos[pantalla][i][0], posTextos[pantalla][i][1]);
   }
 }  
 
