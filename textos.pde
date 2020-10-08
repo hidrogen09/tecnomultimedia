@@ -11,6 +11,7 @@ void inicializarTextos() {
     "Realizado para: LMM1\n"+
     "Edición:             Processing\n                           "+
     "Photoshop";
+  texto[2][12] = "Presiona 'R' para volver";
   texto[3][7] = "Barba azul era un hombre lleno de riquezas de la ciudad,\nposeia un gran castillo que se encontraba\nen un lugar muy codicioso."+
     "Por una extraña razon era un\nhombre el cual habia enviudado 7 veces \npero siempre se atribuyeron los hecho a situaciones naturales.\n"+
     "En este día, Barba Azul se propuso buscar una\nnueva esposa a la cual debia seducir por sus enormes riquezas,\nya que, no era un hombre muy atractivo";
@@ -20,11 +21,10 @@ void inicializarTextos() {
   texto[4][10] = "Negarse";
   texto[5][11] = "Pese a la respuesta negativa de las hermanas,\nBarba Azul continua su busqueda.\n"+
     "Aunque nunca tuvo la suerte y al pasar los años,\nmurió en soledad.";
-  texto[2][12] = "Presiona 'R' para volver";
+
   texto[5][12] = "Presiona 'R' para volver";
-  texto[8][12] = "Presiona 'R' para volver";
-  texto[17][12] = "Presiona 'R' para volver";
-  texto[20][12] = "Presiona 'R' para volver";
+
+
   texto[6][13] = "Ella acepta y rapidamente Barba Azul organiza\nuna boda en su castillo.";
   texto[7][14] = "Pasaron los meses juntos y a Barba Azul le surge un viaje a la\n"+
     "ciudad vecina. Le pregunta a la Doncella si quiere ir con el";
@@ -32,6 +32,7 @@ void inicializarTextos() {
   texto[7][16] = "Se queda";
   texto[8][17] = "Se van de viaje juntos pero por la noche\nuna fuerte tormenta los hace\n"+
     "caer por un barranco y murieron.";
+  texto[8][12] = "Presiona 'R' para volver";
   texto[9][18] = "La doncella decide quedarse en el castillo, entonces\n"+
     "Barba Azul le da llaves pero este le aclara que no debe\n"+
     "usar una llave en especifico."+
@@ -43,6 +44,7 @@ void inicializarTextos() {
     "le llama la atencion la llave prohibida.\n¿Intenta abrir la llave?";
   texto[11][21] = "No la abre";
   texto[11][22] = "La abre";
+
   texto[12][23] = "Sigue con la reunion familiar y\n"+
     "se olvida de las llaves por el momento";
   texto[13][24] = "Al poco tiempo Barba Azul\nvuelve del viaje y se\n"+
@@ -62,6 +64,7 @@ void inicializarTextos() {
   texto[17][30] = "Los hermanos matan a Barba Azul\n y "+
     "logran liberar a su hermana\n"+
     "de esa sombría habitación. FIN";
+  texto[17][12] = "Presiona 'R' para volver";
   texto[18][31] = "   Barba Azul al pedirle\n  las llaves,"+
     "la doncella\n pregunta que"
     +"hay en\nla puerta prohibida";
@@ -70,6 +73,7 @@ void inicializarTextos() {
     "Ante la negacion de Barba Azul,\n"+
     "la doncella intenta\nabrir la puerta";
   texto[20][33] = "Barba Azul se queda sin opcion y mata a la\ndoncella antes de que pueda hacer algo.";
+  texto[20][12] = "Presiona 'R' para volver";
 }
 
 void imprimirTextosPorPantalla () {
