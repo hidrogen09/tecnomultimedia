@@ -1,5 +1,4 @@
 int pantalla = 1;
-int pantallaActual;
 int cantPantallas = 21;
 int cantImagenes = 21;
 int cantText = 34;
