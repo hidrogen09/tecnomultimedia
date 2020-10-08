@@ -76,6 +76,16 @@ void inicializarTextos() {
   texto[20][12] = "Presiona 'R' para volver";
 }
 
+/*
+void imprimirTextosPorPantalla (int pantalla, color pColor, int tam) { //FOR para iniciar textos
+  fill(pColor);
+  textSize(tam);
+  for (int i= 1; i < cantText; i =34) { 
+    text(texto[pantalla][i], posTextos[pantalla][i][0], posTextos[pantalla][i][1]);
+  }
+}*/
+
+
 void imprimirTextosPorPantalla () {
   fill(255);
   textSize(20);
