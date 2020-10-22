@@ -1,3 +1,5 @@
+//Reemplaza pantalla 15 del cuento, donde la princesa abre la puerta prohibida y debe llegar el hermano a rescatarla de Barba Azul
+
 Juego juego;
 
 void setup() {
