@@ -4,13 +4,13 @@ class Ave{
   int posY;
 
   Ave() {
-    Tam = 100; //tamaño obstaculo
+    Tam = 100; //tamaño ave
     posX = width; //posX
     posY = height - Tam; // posY
   }
 
   void mover() {
-    posX -= 25; //velocidad de acercamiento de cactus
+    posX -= 25; //velocidad de acercamiento de aves
   }
 
   void dibujar() {
