@@ -14,7 +14,6 @@ class Ave {
     image(ave, resize.PorcentajeX(posX), resize.PorcentajeY(posY-60), resize.PorcentajeX(tam-40), resize.PorcentajeY(tam-40));
     posX -= velocidad;
   }
-
   void moverEnX(int p_posX) {
     posX = p_posX;
   }
