@@ -76,7 +76,7 @@ class Juego {
   }
 
   void inicializar() {
-    videoJuego = new VideoJuego(800, 0);
+    videoJuego = new VideoJuego();
     status = 0;
   }
 } 
