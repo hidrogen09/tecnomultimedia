@@ -97,3 +97,4 @@ class Textos {
     text(textosPantallas[1],0,0);
     }
   }
+ 
