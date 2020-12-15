@@ -1,5 +1,4 @@
 class Resize {
-
   Resize() {
   }
   int PorcentajeX(int valor) {
