@@ -9,7 +9,7 @@ class Controlador {
   int pantalla;
   Resize resize = new Resize();
 
-  //sonido
+       //sonido
   SoundFile track1;
 
   Controlador(PApplet pApplet) {
@@ -102,18 +102,15 @@ class Controlador {
     //Creo la pantalla 15 (la descubre barba) (inicio de juego)
     pantalla = 14;
     juego= new Juego();
-    //boton1 = new Boton(textos.getTextoParaPantallaBoton(pantalla, 0), resize.PorcentajeX(540), resize.PorcentajeY (480), 15);
-    //boton2 = new Boton(textos.getTextoParaPantallaBoton(pantalla, 1), resize.PorcentajeX(150), resize.PorcentajeY (480), 19);
     pantallas[pantalla] = new Pantalla(fondos[pantalla], textos.getTextoParaPantalla(pantalla), null, null, null, juego);
 
-    //Creo la pantalla 16 (la salvan los hermano)(ganaria el juego)
+    //Creo la pantalla 16 (la salvan el hermano)(ganaria en el juego)
     pantalla = 15;
     boton1 = new Boton(textos.getTextoParaPantallaBoton(pantalla, 0), resize.PorcentajeX (width/2-100), resize.PorcentajeY (480), 16);
     pantallas[pantalla] = new Pantalla(fondos[pantalla], textos.getTextoParaPantalla(pantalla), boton1, null, null, null); 
 
     //Creo la pantalla 17 (fin)
     pantalla = 16;
-
     boton1 = new Boton(textos.getTextoParaPantallaBoton(pantalla, 0), resize.PorcentajeX (width/2-70), resize.PorcentajeY (480), 0);
     pantallas[pantalla] = new Pantalla(fondos[pantalla], textos.getTextoParaPantalla(pantalla), boton1, null, null, null); 
 
