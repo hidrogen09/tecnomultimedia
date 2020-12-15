@@ -19,7 +19,6 @@ class Creditos {
   void movPosY() {
     posY--;
   }
-  
   void inicioPosYcreditos() {
       posY = 550;
   } 
