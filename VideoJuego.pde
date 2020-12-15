@@ -10,9 +10,8 @@ class VideoJuego {
   Obstaculo [] obstaculo = new Obstaculo [cantidadEnemigos];
   Ave [] ave = new Ave [cantidadEnemigos];
 
-  VideoJuego(int p_posX, int p_posY) {
-    posX = p_posX;
-    posY = p_posY;
+  VideoJuego() {
+    posX = 800;
     tam = 700;
 
 
@@ -27,8 +26,8 @@ class VideoJuego {
     for (int i=0; i < cantidadEnemigos; i++ ) {
       obstaculo[i].dibujar();
       if (jugador.choque(obstaculo[i])) {
-        obstaculo[i].moverEnX(generarPosicionEnemigo());
         armadura.bajarArmadura();
+        obstaculo[i].moverEnX(generarPosicionEnemigo());
       }
     }
   }
@@ -37,8 +36,8 @@ class VideoJuego {
     for (int i=0; i < cantidadEnemigos; i++ ) {
       ave[i].dibujar();
       if (jugador.choque(ave[i])) {
-        ave[i].moverEnX(generarPosicionAve());
         armadura.bajarArmadura();
+        ave[i].moverEnX(generarPosicionAve());
       }
     }
   }
@@ -50,10 +49,10 @@ class VideoJuego {
   }
 
   int generarPosicionEnemigo() {
-    return round(random(1000, 2000));
+    return round(random(1000, tam));
   }
   int generarPosicionAve() {
-    return round(random(1000, 1100));
+    return round(random(1000, 2000));
   }
 
   void dibujoVideoJuego() {
@@ -62,7 +61,6 @@ class VideoJuego {
     jugador.dibujar();
     contador.dibujar();
     armadura.dibujar();
-    controlarGanarOPerder();
     jugador.saltar();
   }
 
@@ -78,12 +76,8 @@ class VideoJuego {
   void inicializar() {
     jugador = new Jugador();
     for (int i=0; i < cantidadEnemigos; i++ ) {
-      obstaculo[i] = new Obstaculo(resize.PorcentajeX(posX + i*tam+100));
-      generarPosicionEnemigo();
-    }
-    for (int i=0; i < cantidadEnemigos; i++ ) {
-      ave[i] = new Ave(resize.PorcentajeX(posX + i*tam+2000));
-      generarPosicionAve();
+      obstaculo[i] = new Obstaculo(resize.PorcentajeX(posX + i*tam));
+      ave[i] = new Ave(resize.PorcentajeX(posX + i*tam+1000));
     }
     armadura = new Armadura(50, 100);
     armadura.bajarArmadura();
