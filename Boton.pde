@@ -23,7 +23,8 @@ class Boton {
   }
 
   int mouseClicked() {
-    if (mouseX > resize.PorcentajeX(posX) && mouseX < resize.PorcentajeX(posX) + resize.PorcentajeX(ancho) && mouseY > resize.PorcentajeY(posY) && mouseY < resize.PorcentajeY(posY) + resize.PorcentajeY(alto) ) {
+    if (mouseX > resize.PorcentajeX(posX) && mouseX < resize.PorcentajeX(posX) + resize.PorcentajeX(ancho) 
+    && mouseY > resize.PorcentajeY(posY) && mouseY < resize.PorcentajeY(posY) + resize.PorcentajeY(alto) ) {
       return pantallaAIr;
     }
     return -1;
