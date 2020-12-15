@@ -45,7 +45,6 @@ class Pantalla {
     if (boton1 != null) {
       pantallaAIr = boton1.mouseClicked();
     }
-
     if (boton2 != null && pantallaAIr == -1) {
       pantallaAIr = boton2.mouseClicked();
     }
