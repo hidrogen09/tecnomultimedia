@@ -13,7 +13,6 @@ class Armadura {
     fill(0);
     text("Armadura: "+ armadura +"%", resize.PorcentajeX(posX+100), resize.PorcentajeY(posY));
   }
-
   void bajarArmadura() {
     armadura-=(5);
   }
