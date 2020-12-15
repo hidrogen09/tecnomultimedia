@@ -38,22 +38,22 @@ class Jugador {
     }
   }
   boolean choque(Obstaculo obstaculo) { //ubicacion de cactus al momento de choque
-    float x1 = x + resize.PorcentajeX(obstaculo.tam) * 0.5;
-    float y1 = y + resize.PorcentajeY(obstaculo.tam) * 0.5;
-    float x2 = resize.PorcentajeX(obstaculo.posX) + resize.PorcentajeX(obstaculo.tam) * 0.5;
-    float y2 = resize.PorcentajeY(obstaculo.posY) + resize.PorcentajeY(obstaculo.tam) * 0.5;
-    return choque(x1, y1, tam, x2, y2, obstaculo.tam-100);
+    float x1 = x + resize.PorcentajeX(obstaculo.tam);
+    float y1 = y + resize.PorcentajeY(obstaculo.tam);
+    float x2 = resize.PorcentajeX(obstaculo.posX) + resize.PorcentajeX(obstaculo.tam);
+    float y2 = resize.PorcentajeY(obstaculo.posY) + resize.PorcentajeY(obstaculo.tam);
+    return choque(x1, y1, x2, y2);
   }
   boolean choque(Ave ave) { //ubicacion de ave al momento de choque
     float x1 = x + resize.PorcentajeX(ave.tam);
     float y1 = y + resize.PorcentajeY(ave.tam);
     float x2 = resize.PorcentajeX(ave.posX) + resize.PorcentajeX(ave.tam);
-    float y2 = resize.PorcentajeY(ave.posY) + resize.PorcentajeY(ave.tam);
-    return choque(x1, y1-200, tam, x2, y2-300, ave.tam-50);
+    float y2 = resize.PorcentajeY(ave.posY) + resize.PorcentajeY(ave.tam-100);
+    return choque(x1, y1, x2, y2);
   }
 
-  boolean choque (float x, float y, float d, float X, float Y, float D) {
-    if ( dist(x, y, X, Y) <= (d/2)+(D/2)) {
+  boolean choque (float x1, float y1, float x2, float y2) {
+    if ( dist(x1, y1, x2, y2) <= tam/2-20) { //menor o igual que
       return true;
     }
     return false;
