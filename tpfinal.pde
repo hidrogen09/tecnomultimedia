@@ -6,7 +6,6 @@ void setup() {
   surface.setResizable(true);
   controlador = new Controlador(this);
 }
-
 void draw() {
   background(200);
   frameRate(30);
