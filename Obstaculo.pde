@@ -9,7 +9,6 @@ class Obstaculo {
     this.tam = 100;
   }
 
-
   void dibujar() {
     image(cactus, resize.PorcentajeX(posX), resize.PorcentajeY(posY), resize.PorcentajeX(tam), resize.PorcentajeY(tam));
     posX -= velocidad;
