@@ -14,7 +14,6 @@ class Contador {
     fill(0);
     text("Metros recorridos: "+ contador++, resize.PorcentajeX(posX+100), resize.PorcentajeY(posY));
   }
-
   void incrementar() {
     contador++;
   }
