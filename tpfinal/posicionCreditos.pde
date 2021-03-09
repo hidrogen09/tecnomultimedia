@@ -12,7 +12,7 @@ class Creditos {
     fill(255);
     textSize(20);
     text("Escrito por: Charles Perrault\n Protagonistas:  Barba Azul\n                           Doncella\n Musica:             Ennio Morricone\n Realizado por:   Martin" +
-      "Fortain\n Realizado para: LMM1\n Edición:             Processing\n                           Photoshop", resize.PorcentajeX(300),resize.PorcentajeY(posY));
+      "Fortain\n Realizado para: TMM1\n Edición:             Processing\n                           Photoshop", resize.PorcentajeX(300),resize.PorcentajeY(posY));
     movPosY();
   }
   
