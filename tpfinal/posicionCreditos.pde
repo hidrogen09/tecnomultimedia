@@ -11,8 +11,8 @@ class Creditos {
   void dibujar() {
     fill(255);
     textSize(20);
-    text("Escrito por: Charles Perrault\n Protagonistas:  Barba Azul\n                           Doncella\n Musica:             Ennio Morricone\n Realizado por:   Martin" +
-      "Fortain\n Realizado para: TMM1\n Edición:             Processing\n                           Photoshop", resize.PorcentajeX(300),resize.PorcentajeY(posY));
+    text("Escrito por: Charles Perrault\nProtagonistas:  Barba Azul\n                           Doncella\nMusica:             Ennio Morricone\nRealizado por:   Martin" +
+      "Fortain\nRealizado para: TMM1\nEdición:             Processing\n                           Photoshop", resize.PorcentajeX(300),resize.PorcentajeY(posY));
     movPosY();
   }
   
