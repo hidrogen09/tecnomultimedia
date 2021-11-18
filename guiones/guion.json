@@ -1,0 +1,28 @@
+{   "audio":"audios/final1.mp3",
+    "modelo":"modelos/boceto1.glb",
+    "fondo":"rgb(100,100,100)",
+    "data" :
+        [
+           {
+                "tiempo":"00:00",
+                "duracion":2000,
+                "camara":[-2,2,5],
+                "target":[0,0,0],
+                "nombre":"inicio"
+           },
+           {
+               "tiempo":"00:03",
+               "duracion":4000,
+               "camara":[2,5,7],
+               "target":[1,3,0],
+               "nombre":"vista dos"
+          },
+          {
+               "tiempo":"00:08",
+               "duracion":7000,
+               "camara":[-5,5,-5],
+               "target":[3,3,1],
+               "nombre":"vista tres"
+          }
+      ]
+}
