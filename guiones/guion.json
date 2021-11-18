@@ -19,10 +19,18 @@
           },
           {
                "tiempo":"00:08",
-               "duracion":7000,
-               "camara":[-5,5,-5],
-               "target":[3,3,1],
+               "duracion":5000,
+               "camara":[-6,2,-7],
+               "target":[0,3,2],
                "nombre":"vista tres"
+          },
+          {
+               "tiempo":"00:15",
+               "duracion":7000,
+               "camara":[-6,7,5],
+               "target":[-5,8,10],
+               "nombre":"vista escalera"
           }
       ]
 }
+
